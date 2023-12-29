@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="/CSS/product.css">
+</head>
+<body>
+  <nav class="nav1">
+    <a href=""> <img src="/assets/logo.png" alt="Logo" height="30">
+    </a>
+    <ul>
+        <li class="dropdown">
+            <a href="services.html" class="dropbtn">Services</a>
+            <!-- Include this HTML within your existing structure -->
+            <div class="dropdown-content">
+                <div class="grid-container">
+                    <a href="#">
+                        <p>Coorporate Social media Branding
+                            <br> and optimization
+                        </p>
+                    </a>
+                    <a href="#">
+                        <p>Coorporate Social media Branding
+                            <br> and optimization
+                        </p>
+                    </a><a href="#">
+                        <p>Coorporate Social media Branding
+                            <br> and optimization
+                        </p>
+                    </a><a href="#">
+                        <p>Coorporate Social media Branding
+                            <br> and optimization
+                        </p>
+                    </a><a href="#">
+                        <p>Coorporate Social media Branding
+                            <br> and optimization
+                        </p>
+                    </a><a href="#">
+                        <p>Coorporate Social media Branding
+                            <br> and optimization
+                        </p>
+                    </a><a href="#">
+                        <p>Coorporate Social media Branding
+                            <br> and optimization
+                        </p>
+                    </a><a href="#">
+                        <p>Coorporate Social media Branding
+                            <br> and optimization
+                        </p>
+                    </a><a href="#">
+                        <p>Coorporate Social media Branding
+                            <br> and optimization
+                        </p>
+                    </a>
+                    <a href="#">
+                        <p>Coorporate Social media Branding
+                            <br> and optimization
+                        </p>
+                    </a>
+                    <a href="#">
+                        <p>Coorporate Social media Branding
+                            <br> and optimization
+                        </p>
+                    </a>
+                    <a href="#">
+                        <p>Coorporate Social media Branding
+                            <br> and optimization
+                        </p>
+                    </a><a href="#">
+                        <p>Coorporate Social media Branding
+                            <br> and optimization
+                        </p>
+                    </a>
+                    <a href="#">
+                        <p>Coorporate Social media Branding
+                            <br> and optimization
+                        </p>
+                    </a>
+                    <a href="#">
+                        <p>Coorporate Social media Branding
+                            <br> and optimization
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+        </li>
+        <li><a href="about us.html">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+
+    <button class="call-button" aria-label="Book A Call">
+        <img src="/assets/Vector.png" alt="">
+        <span>Book a call</span>
+        <span class="circle"></span>
+    </button>
+</nav>
+<div class="hero-section">
+  <h2>Ghost-Create and Resell</h2>
+  <h3>A Bitcoin-Optimized Brand</h3>
+  <div class="twriter">
+    <p id="typewriter-text"></p>
+  </div>
+
+  <div class="buttons-container">
+    <a href="#" class="button">Go to Products</a>
+    <a href="#" class="button">Book a Call</a>
+  </div>
+
+
+  <div class="marque-container">
+    <div class="marque">
+        <img src="/assets/image 37.png" alt="">
+        <div>I have Ghost-created 100 bussiness since 2017</div>
+        <img src="/assets/image 37.png" alt="">
+      </div>
+  </div>
+</div>
+
+<div class="fixed-nav">
+    <a href="index.html">
+        <div class="servicebtn1">
+            <div class="btn">Service</div>
+        </div>
+    </a>
+    <a href="product.html">
+        <div class="servicebtn2 active">
+            <div class="btn">Product</div>
+        </div>
+    </a>
+</div>
+
+
+<footer class="footer">
+    <div class="footer-cta">
+        <h2>Ready to Unleash Your Brand's Full <br> Potential? <span class="cta-span">Send a Message</span></h2>
+    </div>
+
+    <div class="under">
+        <div class="s-media">
+            <h6>Services</h6>
+            <div class="linkcontainer">
+                <a href="">
+                    <h2>Twitter</h2>
+                </a>
+                <a href="">
+                    <h2>Tiktok</h2>
+                </a>
+                <a href="">
+                    <h2>youtube</h2>
+                </a>
+            </div>
+
+        </div>
+        <div class="u-services">
+                            <h6>Services</h6>
+
+            <div class="linkcontainer">
+                <a href="">
+                    <h2>Brand Developmet</h2>
+                </a>
+                <a href="">
+                    <h2>Ecosystem Introduction</h2>
+                </a>
+                <a href="">
+                    <h2>Project Review</h2>
+                </a>
+            </div>
+           
+        </div>
+    </div>
+</footer>
+
+<script>
+  const typewriterText = document.getElementById('typewriter-text');
+const textOptions = ['+3 Month Content Strategy', '+3 Month Strategic Support'];
+let currentTextIndex = 0;
+let textIndex = 0;
+
+const typeLetter = (isTypingIn) => {
+  if (isTypingIn) {
+    if (textIndex < textOptions[currentTextIndex].length) {
+      typewriterText.textContent += textOptions[currentTextIndex].charAt(textIndex);
+      textIndex++;
+      setTimeout(typeLetter, 75, true); // Adjust delay for typing speed
+    } else {
+      setTimeout(() => {
+        typeLetter(false); // Start deleting letters
+      }, 500); // Delay before deletion starts
+    }
+  } else {
+    if (textIndex > 0) {
+      typewriterText.textContent = textOptions[currentTextIndex].substring(0, textIndex - 1);
+      textIndex--;
+      setTimeout(typeLetter, 75, false);
+    } else {
+      setTimeout(() => {
+        currentTextIndex = (currentTextIndex + 1) % textOptions.length; // Switch to the next text
+        textIndex = 0;
+        typeLetter(true); // Start typing the next text
+      }, 500); // Delay before next text starts
+    }
+  }
+};
+
+typeLetter(true); // Start typing the first text
+
+
+</script>
+</body>
+</html>

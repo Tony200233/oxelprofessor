@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+}
+
+nav {
+    background-color: #fff;
+    height: 100vh;
+    width: 200px;
+    color: #fff;
+    padding-top: 20px;
+    position: fixed;
+    border-right: 2px solid #D5D5D5;
+}
+
+.nav3 a {
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    transition: background 0.3s;
+    color: var(--Grey-700, #586A84);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nav3 a.highlighted {
+    background-color: #ECECEC;
+    color: #333;
+}
+
+.nav3 svg {
+    margin-right: 8px;
+    vertical-align: middle;
+
+}
+
+
+.nav3 a:hover {
+    background-color: #555;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.content p {
+    width: 940px;
+
+    color: #5E5353;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 54.359px;
+}
+
+.hidden {
+    display: none;
+}
+
+.skills {
+    margin-top: 20px;
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    background-color: #4caf50;
+    height: 100%;
+}
+
+.tooltip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 14px;
+    display: none;
+}
+
+
+
+.contact-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    /* position: absolute; */
+    top: 50%;
+    left: 50%;
+    transform: translate(35%, 110%);
+}
+
+.contact-container a {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    background-color: #FFF;
+    box-shadow: 0px 4px 21.4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inc {
+    width: 85.714px;
+    height: 85.714px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1D9BF0;
+}
+
+.cctwitter {
+    border-radius: 18px;
+}
+
+.cctwitter:hover {
+    transform: scale(1.2);
+    /* Increase the scale factor for a stronger zoom effect */
+    transition: transform 0.3s ease;
+    /* Add a smooth transition effect */
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+    .nav3 {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .nav3 a {float: left;}
+    div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    .nav3 a {
+        text-align: center;
+        float: none;
+    }
+}
