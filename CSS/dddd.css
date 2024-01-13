@@ -462,4 +462,5 @@ background: rgba(238, 238, 238, 0.95);
 }
     .wrapper .service-text p {
         margin-left: -4rem;
+        width: 13rem;
 }
