@@ -464,4 +464,7 @@ background: rgba(238, 238, 238, 0.95);
     .wrapper .service-text p {
         width: 21rem;
 }
+
+    .cta-text h2 { 
+        font-size: 1rem;
     }
