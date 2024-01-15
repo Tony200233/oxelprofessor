@@ -458,7 +458,7 @@ background: rgba(238, 238, 238, 0.95);
 
 
 .wrapper .edited {
-    width: 40vw; margin: 0 auto;     margin-left: -2rem;
+    width: 40vw; margin: 0 auto;     margin-left: -0.5rem;
  font-size: 1rem;
 }
     .wrapper .service-text p {
