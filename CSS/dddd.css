@@ -468,3 +468,9 @@ background: rgba(238, 238, 238, 0.95);
     .cta-text h2 { 
         font-size: 1rem;
     }
+
+    .wrapper .service {
+        margin-left: -1rem;
+    }
+
+}
