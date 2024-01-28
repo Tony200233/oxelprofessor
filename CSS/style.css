@@ -1484,6 +1484,7 @@ button[aria-expanded='true'] .icon::after {
 
   .naav {
     width: 100%;
+        height: 2.95rem;
     right: 0;
     left: 0;
     top: 0;
