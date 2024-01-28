@@ -596,7 +596,7 @@ nav .call-button {
 
     div.content {margin-left: 0;} */
 
-    .nav3 {
+  .nav3 {
         background-color: #fff;
         display: flex;
         align-items: center;
@@ -604,10 +604,12 @@ nav .call-button {
         height: 40px;
         width: 100vw;
         color: #fff;
-        /* padding-top: 20px; */
+        padding-top: 20px;
+        padding-bottom: 10px;
         position: fixed;
         border-bottom: 2px solid #D5D5D5;
     }
+
 
     .nav3 a {
         text-decoration: none;
@@ -634,6 +636,7 @@ nav .call-button {
 
 
     
+  
 .content {
     /* margin-left: -200px; */
     padding: 10px;
@@ -642,7 +645,7 @@ nav .call-button {
 }
 
 .content p {
-    width: 320px;
+    width: 325px;
 
     color: #5E5353;
     font-family: Inter;
@@ -651,8 +654,8 @@ nav .call-button {
     font-weight: 500;
     line-height: 24.359px;
     margin-top: 70px;
+    margin: 4rem auto;
 }
-
 
 .twtop, .twbottom {
   margin-left: -8rem;
