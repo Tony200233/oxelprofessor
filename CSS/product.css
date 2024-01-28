@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600&family=DM+Sans:opsz,wght@9..40,300&family=Fasthand&family=Ingrid+Darling&family=Inter:wght@500;600;700&family=Lexend:wght@300&family=Manrope:wght@600&family=Open+Sans:ital,wght@1,600&family=Poppins&family=Roboto+Slab:wght@500&family=Roboto:wght@700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kadwa&display=swap');
 
@@ -75,6 +76,7 @@ body {
 .hero-section .buttons-container {
     display: flex;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .hero-section .button {
@@ -108,15 +110,14 @@ body {
     overflow-y: hidden;
     justify-content: center;
     box-sizing: border-box;
-
 }
 
 .marque {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* width: 100vw; */
-    width: 1390px;
+    width: 100vw;
+    /* width: 1390px; */
     /* margin-left: -16px; */
     overflow: hidden;
     background-color: #DFB9B9;
@@ -126,7 +127,6 @@ body {
     margin-right: 10px;
     /* padding-bottom: 10px; */
     box-sizing: border-box;
-
 
     color: #1B283A;
     font-family: 'Kadwa', serif;
@@ -148,6 +148,127 @@ flex-shrink: 0;
 }
 
 
+
+.card3-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    background: #f0f0f0;
+    /* margin-bottom: 3rem; */
+    padding-bottom: 3rem;
+}
+
+.card3 {
+    width: 19rem;
+    height: 22rem;
+    padding: 3rem;
+    border-radius: 2rem;
+    background-color: #fff;
+    opacity: 0; /* Initially hidden */
+    transform: scale(0); /* Initially scaled down */
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.card3 h1 {
+    font-size: 1rem;
+    margin-top: 4rem;
+}
+
+.card3 img {
+    width: 120px;
+
+}
+
+.card3_3,
+.card3_4 {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.togo {
+    background-color: none;
+    background: none;
+}
+
+.togo h2 {
+    font-family: 'Lexend', sans-serif;
+    font-size: 2rem;
+}
+
+/* Add a class to trigger the animation */
+.animate {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+
+.scene {
+    border: 1px solid #CCC;
+    margin: 40px 0;
+    position: relative;
+    width: 270px;
+    height: 200px;
+    margin: 80px auto;
+    perspective: 1000px;
+    border-radius: 0.5rem;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateZ(-288px);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    border-radius: 0.5rem;
+}
+
+.carousel__cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 250px;
+    height: 180px;
+    left: 10px;
+    top: 10px;
+    border-radius: 0.5rem;
+   
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    transition: transform 1s, opacity 1s;
+    text-align: center;
+    
+backdrop-filter: blur(10px);
+border: 1px solid #fff;
+/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+
+
+
+
+
+.carousel__cell:nth-child(9n+1) {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.carousel-options {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    /* background: hsla(0, 0%, 100%, 0.8); */
+    margin-bottom: 3rem;
+}
 
 
 .footer {
@@ -320,6 +441,17 @@ margin-top: -5px;
     cursor: pointer;
 }
 
+.s-media h6 {
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.u-services h6 {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    /* margin-bottom: -1px; */
+}
+
 
 @media screen and (max-width: 768px) {
     .hero-section {
@@ -425,4 +557,52 @@ font-weight: 700;
         width: 40px; /* Adjust image size for smaller screens */
         height: 40px; /* Adjust image size for smaller screens */
     }
+
+
+    .card3_3,
+.card3_4 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.togo2 {
+    height: 1rem;
+    margin-top: -1rem;
+    /* margin-bottom: 1rem; */
+}
+
+.card3-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 2.8rem; */
+}
+
+.card3 {
+    width: 60%; /* Full width on smaller screens */
+    height: auto; /* Auto height to fit content */
+    padding: 2rem;
+    margin: 0 auto;
+
+}
+
+.card3 h1 {
+    font-size: 0.9rem; /* Adjusted font size for smaller screens */
+    margin-top: 1.5rem; /* Adjusted margin for smaller screens */
+}
+
+.card3 img {
+    width: 60px; /* Adjusted image size for smaller screens */
+}
+
+
+.togo h2 {
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.3rem;
+}
+
+
  }
