@@ -434,6 +434,7 @@ nav .call-button {
   margin: 0 auto;
   /* Center horizontally */
   border-radius: 62.5rem;
+  /* display: flex; */
   /* 1000px converted to rem */
   /* Adjust the value as desired */
 }
@@ -447,6 +448,8 @@ nav .call-button {
 }
 
 #my-video {
+  margin: 0 auto;
+
   filter: blur(5px);
 }
 
@@ -1672,8 +1675,8 @@ button[aria-expanded='true'] .icon::after {
     /* 40px converted to rem */
   }
 
-  .main-container {
-    width: 93%;
+   .main-container {
+    width: 100%;
     margin-top: 0.625rem;
     /* 10px converted to rem */
     transition: transform 0.3s ease-in-out;
@@ -1685,13 +1688,14 @@ button[aria-expanded='true'] .icon::after {
   }
 
   .video-container {
-    /* width: 90%; */
-    height: 22.75rem;
+    width: 380px;
+    height: 210px;
+    /* width: 100vw;
+    height: 22.75rem; */
     /* 300px converted to rem */
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     z-index: 0;
-    overflow: visible;
     /* Allow play button to be positioned outside */
     margin: 0 auto;
     margin-top: 0.625rem;
@@ -1701,8 +1705,8 @@ button[aria-expanded='true'] .icon::after {
   .video-container video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 4.375rem;
+    /* object-fit: cover; */
+    border-radius: 2.375rem;
     /* Adjust the border-radius value */
   }
 
@@ -1713,7 +1717,7 @@ button[aria-expanded='true'] .icon::after {
     transform: translate(-50%, -50%);
     width: 10.062rem;
     /* 161px converted to rem */
-    height: 3.971rem;
+    height: 2.971rem;
     /* 63.539px converted to rem */
     flex-shrink: 0;
     z-index: 1;
@@ -2040,6 +2044,41 @@ button[aria-expanded='true'] .icon::after {
     /* 144.444% */
   }
 
+  .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+  }
+  
+  .icon::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 10px;
+    left: 6px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+  }
+  
+  .icon::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 6px;
+    left: 10px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+  }
+
+
+
   .cta-section {
     background-color: #F4F4F4;
     padding: 60px 0;
@@ -2079,7 +2118,7 @@ button[aria-expanded='true'] .icon::after {
 
     color: #DFDBD8;
     font-family: Inter;
-    font-size: 20px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 700;
     line-height: 30px;
