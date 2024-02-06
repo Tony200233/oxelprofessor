@@ -1219,6 +1219,21 @@ button[aria-expanded='true'] .icon::after {
   letter-spacing: -0.516px;
 }
 
+.social-icons {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.social-icons svg {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+
+}
+
 .cta-span {
   color: #F35422;
   font-weight: bold;
