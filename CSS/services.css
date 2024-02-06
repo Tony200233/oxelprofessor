@@ -145,7 +145,7 @@ section {
 }
 
 .new-section .eco-image {
-    height: 602px;
+    height: 433px;
 }
 
 
@@ -592,8 +592,8 @@ section {
         margin-top: 1.025rem;
     }
 
-    .new-section .eco-image {
-        height: 175px;
+   .new-section .eco-image {
+        height: 105px;
         /* margin: 0 auto; */
     }
 
