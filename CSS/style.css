@@ -1688,7 +1688,7 @@ button[aria-expanded='true'] .icon::after {
   }
 
   .video-container {
-    width: 380px;
+    width: 365px;
     height: 210px;
     /* width: 100vw;
     height: 22.75rem; */
@@ -1723,6 +1723,7 @@ button[aria-expanded='true'] .icon::after {
     z-index: 1;
     /* Place the play button above the video container */
     transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+        margin-top: -20px;
   }
 
   .fixed-button {
@@ -2249,4 +2250,8 @@ button[aria-expanded='true'] .icon::after {
     text-align: center;
     width: 70vw;
   }
+
+
+  #my-div {
+    display: none;
 }
